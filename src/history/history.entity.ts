@@ -1,10 +1,11 @@
 import { Table, Column, Model } from 'sequelize-typescript';
+import { BaseEntity } from '../base/base.entity';
 
 @Table({
   tableName: 'History',
   timestamps: false,
 })
-export class History extends Model {
+export class History extends BaseEntity {
   @Column
   EmployeeID: string;
 
